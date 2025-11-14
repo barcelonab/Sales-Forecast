@@ -2,8 +2,8 @@
 
 **Forecast Types**
 
-Month Rollling Forcast
-Recursive Forcasting - predicts the next value by using the average (or sum) of the previous 3 months of actual data. As new months come in, the window “rolls forward” and the oldest month drops out. It is used when you want to predict future values based on the recent past, especially when the data does not have strong yearly seasonality but does show short-term patterns.
+Month Rolling Forecast
+Recursive Forecasting - predicts the next value by using the average (or sum) of the previous 3 months of actual data. As new months come in, the window “rolls forward” and the oldest month drops out. It is used when you want to predict future values based on the recent past, especially when the data does not have strong yearly seasonality but does show short-term patterns.
 
 Forecast YoY
 Seasonal Forecasting - Can be used any time your data shows repeating patterns at regular intervals.
