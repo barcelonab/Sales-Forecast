@@ -1,0 +1,4 @@
+relationship de99e6d1-1694-801a-5b16-60c8bb9a3aed
+	fromColumn: Sales.So_Date
+	toColumn: DateTable.Date
+

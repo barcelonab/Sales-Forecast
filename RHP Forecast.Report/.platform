@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "RHP Forecast"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "996f0aaf-26a0-487d-9e76-7ee860601cbf"
+  }
+}

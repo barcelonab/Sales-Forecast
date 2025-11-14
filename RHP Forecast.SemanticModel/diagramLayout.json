@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 322,
+            "y": 0
+          },
+          "nodeIndex": "Sales",
+          "nodeLineageTag": "447cb029-ca15-42d0-b03e-f721c4bd83b7",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 927,
+            "y": 325
+          },
+          "nodeIndex": "_measure",
+          "nodeLineageTag": "bf267290-90b8-4533-afe3-385afcc2045a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 936,
+            "y": 0
+          },
+          "nodeIndex": "DateTable",
+          "nodeLineageTag": "37513bb5-cda8-4e2e-9a4c-8e7b6f18706b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

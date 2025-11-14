@@ -1,0 +1,57 @@
+table DateTable
+	lineageTag: 37513bb5-cda8-4e2e-9a4c-8e7b6f18706b
+
+	column Date
+		formatString: General Date
+		lineageTag: 866be75f-967b-4bb8-9345-c7e88f468deb
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthYear
+		lineageTag: e9e291f7-048d-419b-ae66-62e35c6bbf05
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthYear]
+		sortByColumn: SortMonthYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column SortMonthYear
+		formatString: 0
+		lineageTag: 6344bee3-8554-4bcf-9b0f-5fc906ae5800
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [SortMonthYear]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: d3e6bd33-4633-4e93-8679-49f8390df29b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DateTable = calculated
+		mode: import
+		source = ```
+				
+				VAR _cal = CALENDAR(MIN(Sales[So_Date]), 
+				            EOMONTH(MAX(Sales[So_Date]), 3)
+				)
+				
+				RETURN
+				ADDCOLUMNS(_cal,
+				            "MonthYear", FORMAT([Date], "mmm YYYY"),
+				            "SortMonthYear", YEAR([Date]) * 100 + MONTH([Date]),
+				            "Year", YEAR([Date])
+				)
+				```
+
+	annotation PBI_Id = d8068f7b8f5f4e60b260ad4d64ee7f2f
+
